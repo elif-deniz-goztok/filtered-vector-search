@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Veri ve buyuk dosyalar (script ile yeniden uretilir)
+data/
+*.parquet
+*.npy
+*.duckdb
+*.duckdb.wal
+
+# LaTeX ciktilari
+*.aux
+*.log
+*.out
+*.synctex.gz
+
+.env
+.vscode/
+.idea/

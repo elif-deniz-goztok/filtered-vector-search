@@ -1,0 +1,34 @@
+CMP461 DBMS Projesi - P8: Filtered Vector Search Inside Relational Engines
+Week 1-4 Yapılacaklar
+==========================================================================
+
+WEEK 1 - Kurulum ve planlama
+[ ] Hedef venue deadline'larını kontrol et (SIGMOD SRC, DaMoN @ SIGMOD, VLDB co-located workshoplar, ADBIS)
+[ ] Public Git repo aç; tüm kurulum/deney adımları script'li olacak
+[ ] Ortam: Linux, 16-32 GB RAM, SSD, embedding modeli için GPU (veya bölüm GPU sunucusu; vLLM/Ollama)
+[ ] PostgreSQL + pgvector ve DuckDB + VSS kur, versiyonları not et
+[ ] Rapor şablonu: ACM sigconf (DaMoN/SIGMOD) - ilk günden bu formatta yaz
+[ ] Literatür taramasına başla (en az 10 makale; HNSW, Filtered-DiskANN, ACORN, Milvus + diğerleri). Başlangıç referanslarının hepsi doğrulanmalı
+
+WEEK 2 - Veri seti
+[ ] 1M embedding'li veri seti oluştur (ör. ürün verisi veya arXiv abstract'ları, açık bir embedding modeliyle)
+[ ] Kategorik ve sayısal attribute'lar ekle (ör. kategori, fiyat)
+[ ] Veriyi pgvector ve DuckDB'ye yükle; HNSW ve IVFFlat index'lerini kur, build time ve index boyutunu ölç
+[ ] Literatür taramasına devam
+
+WEEK 3 - Filtreler ve mevcut stratejilerin ölçümü
+[ ] Filtre üreteci: selectivity %0.1'den %100'e, düşük ve yüksek filtre-vektör korelasyonu
+[ ] Mevcut stratejileri ölç: B-tree filtreli exact scan, HNSW + post-filtering, IVFFlat, pgvector iterative scans, partitioned index, DuckDB VSS
+[ ] Metrikler: Recall@10, p50/p99 latency, dönen sonuç sayısı vs. k; tekrarlı koşular ve varyans
+[ ] Danışman check-in'i (Week 3)
+
+WEEK 4 - Baseline ve Progress Report (hard gate)
+[ ] Yayınlanmış bir makaleden en az bir sonucu reproduce et (~%10 içinde, ya da sapmayı açıkla). Reproduce edilemezse planda belirtilen fallback'e geç
+[ ] Kendi fikrimizin (selectivity tabanlı access path chooser) ilk ölçümleri
+[ ] Progress report (4 sayfa + referanslar):
+    - Giriş + tek cümlelik araştırma sorusu ve beklenen katkı
+    - Related work (>=10 makale, gap ile biten)
+    - System setup (DBMS versiyonu, donanım, veri seti, workload generator, repo)
+    - Baseline sonuçları
+    - Week 5-8 planı (riskler + isimli fallback)
+[ ] Notlandırma: literatür %10, setup+baseline %15, plan %5

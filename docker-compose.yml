@@ -1,0 +1,25 @@
+services:
+  postgres:
+    # pgvector 0.8.0+ gerekli (iterative index scans icin)
+    image: pgvector/pgvector:0.8.0-pg17
+    container_name: dbms_pgvector
+    environment:
+      POSTGRES_USER: dbms
+      POSTGRES_PASSWORD: dbms
+      POSTGRES_DB: vectordb
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./db/init:/docker-entrypoint-initdb.d:ro
+    # 1M vektor + HNSW build icin bellek ayarlari
+    command: >
+      postgres
+      -c shared_buffers=2GB
+      -c maintenance_work_mem=4GB
+      -c work_mem=64MB
+      -c max_parallel_maintenance_workers=4
+    shm_size: 4gb
+
+volumes:
+  pgdata:
