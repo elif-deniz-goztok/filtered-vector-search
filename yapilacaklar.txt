@@ -3,7 +3,7 @@ Week 1-4 Yapılacaklar
 ==========================================================================
 
 WEEK 1 - Kurulum ve planlama
-[ ] Hedef venue deadline'larını kontrol et (SIGMOD SRC, DaMoN @ SIGMOD, VLDB co-located workshoplar, ADBIS)
+[x] Hedef venue deadline'larını kontrol et (SIGMOD SRC, DaMoN @ SIGMOD, VLDB co-located workshoplar, ADBIS)
 [ ] Public Git repo aç; tüm kurulum/deney adımları script'li olacak
 [ ] Ortam: Linux, 16-32 GB RAM, SSD, embedding modeli için GPU (veya bölüm GPU sunucusu; vLLM/Ollama)
 [x] PostgreSQL + pgvector ve DuckDB + VSS kur, versiyonları not et
