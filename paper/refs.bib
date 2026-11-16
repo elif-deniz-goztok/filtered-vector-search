@@ -1,4 +1,7 @@
-% Her girisi eklemeden once kaynagindan (DOI / yayinci sayfasi) dogrulayin.
+% Kunyeler 16 Kasim 2026'da Crossref / yayinci sayfalarindan dogrulandi.
+% Yeni giris eklerken once DOI veya yayinci sayfasindan kontrol edin.
+
+% ---------- 1. ANN indexleri ve benchmark ----------
 
 @article{malkov2020hnsw,
   author  = {Malkov, Yu A. and Yashunin, D. A.},
@@ -9,4 +12,187 @@
   pages   = {824--836},
   year    = {2020},
   doi     = {10.1109/TPAMI.2018.2889473}
+}
+
+@article{jegou2011pq,
+  author  = {J{\'e}gou, Herv{\'e} and Douze, Matthijs and Schmid, Cordelia},
+  title   = {Product Quantization for Nearest Neighbor Search},
+  journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  volume  = {33},
+  number  = {1},
+  pages   = {117--128},
+  year    = {2011},
+  doi     = {10.1109/TPAMI.2010.57}
+}
+
+@inproceedings{subramanya2019diskann,
+  author    = {Jayaram Subramanya, Suhas and Devvrit, Fnu and Simhadri, Harsha Vardhan and Krishnaswamy, Ravishankar and Kadekodi, Rohan},
+  title     = {{DiskANN}: Fast Accurate Billion-point Nearest Neighbor Search on a Single Node},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {32},
+  year      = {2019}
+}
+
+@article{aumuller2020annbenchmarks,
+  author  = {Aum{\"u}ller, Martin and Bernhardsson, Erik and Faithfull, Alexander},
+  title   = {{ANN-Benchmarks}: A Benchmarking Tool for Approximate Nearest Neighbor Algorithms},
+  journal = {Information Systems},
+  volume  = {87},
+  pages   = {101374},
+  year    = {2020},
+  doi     = {10.1016/j.is.2019.02.006}
+}
+
+% ---------- 2. Filtreli ANN algoritmalari ----------
+
+@inproceedings{gollapudi2023filtereddiskann,
+  author    = {Gollapudi, Siddharth and Karia, Neel and Sivashankar, Varun and Krishnaswamy, Ravishankar and Begwani, Nikit and Raz, Swapnil and Lin, Yiyong and Zhang, Yin and Mahapatro, Neelam and Srinivasan, Premkumar and Singh, Amit and Simhadri, Harsha Vardhan},
+  title     = {{Filtered-DiskANN}: Graph Algorithms for Approximate Nearest Neighbor Search with Filters},
+  booktitle = {Proceedings of the ACM Web Conference 2023},
+  pages     = {3406--3416},
+  year      = {2023},
+  doi       = {10.1145/3543507.3583552}
+}
+
+@article{patel2024acorn,
+  author  = {Patel, Liana and Kraft, Peter and Guestrin, Carlos and Zaharia, Matei},
+  title   = {{ACORN}: Performant and Predicate-Agnostic Search Over Vector Embeddings and Structured Data},
+  journal = {Proceedings of the ACM on Management of Data},
+  volume  = {2},
+  number  = {3},
+  pages   = {1--27},
+  year    = {2024},
+  doi     = {10.1145/3654923}
+}
+
+@article{zuo2024serf,
+  author  = {Zuo, Chaoji and Qiao, Miao and Zhou, Wenchao and Li, Feifei and Deng, Dong},
+  title   = {{SeRF}: Segment Graph for Range-Filtering Approximate Nearest Neighbor Search},
+  journal = {Proceedings of the ACM on Management of Data},
+  volume  = {2},
+  number  = {1},
+  pages   = {1--26},
+  year    = {2024},
+  doi     = {10.1145/3639324}
+}
+
+@article{sehgal2025navix,
+  author  = {Sehgal, Gaurav and Saliho{\u{g}}lu, Semih},
+  title   = {{NaviX}: A Native Vector Index Design for Graph {DBMSs} With Robust Predicate-Agnostic Search Performance},
+  journal = {Proceedings of the VLDB Endowment},
+  volume  = {18},
+  number  = {11},
+  pages   = {4438--4450},
+  year    = {2025},
+  doi     = {10.14778/3749646.3749704}
+}
+
+% ---------- 3. Vektor veritabanlari ve DBMS ici vektor arama ----------
+
+@inproceedings{wang2021milvus,
+  author    = {Wang, Jianguo and Yi, Xiaomeng and Guo, Rentong and Jin, Hai and Xu, Peng and Li, Shengjun and Wang, Xiangyu and Guo, Xiangzhou and Li, Chengming and Xu, Xiaohai and Yu, Kun and Yuan, Yuxing and Zou, Yinghao and Long, Jiquan and Cai, Yudong and Li, Zhenxiang and Zhang, Zhifeng and Mo, Yihua and Gu, Jun and Jiang, Ruiyi and Wei, Yi and Xie, Charles},
+  title     = {Milvus: A Purpose-Built Vector Data Management System},
+  booktitle = {Proceedings of the 2021 International Conference on Management of Data},
+  pages     = {2614--2627},
+  year      = {2021},
+  doi       = {10.1145/3448016.3457550}
+}
+
+@article{wei2020analyticdbv,
+  author  = {Wei, Chuangxian and Wu, Bin and Wang, Sheng and Lou, Renjie and Zhan, Chaoqun and Li, Feifei and Cai, Yuanzhe},
+  title   = {{AnalyticDB-V}: A Hybrid Analytical Engine Towards Query Fusion for Structured and Unstructured Data},
+  journal = {Proceedings of the VLDB Endowment},
+  volume  = {13},
+  number  = {12},
+  pages   = {3152--3165},
+  year    = {2020},
+  doi     = {10.14778/3415478.3415541}
+}
+
+@inproceedings{yang2020pase,
+  author    = {Yang, Wen and Li, Tao and Fang, Gai and Wei, Hong},
+  title     = {{PASE}: {PostgreSQL} Ultra-High-Dimensional Approximate Nearest Neighbor Search Extension},
+  booktitle = {Proceedings of the 2020 ACM SIGMOD International Conference on Management of Data},
+  pages     = {2241--2253},
+  year      = {2020},
+  doi       = {10.1145/3318464.3386131}
+}
+
+@inproceedings{zhang2023vbase,
+  author    = {Zhang, Qianxi and Xu, Shuotao and Chen, Qi and Sui, Guoxin and Xie, Jiadong and Cai, Zhizhen and Chen, Yaoqi and He, Yinxuan and Yang, Yuqing and Yang, Fan and Yang, Mao and Zhou, Lidong},
+  title     = {{VBASE}: Unifying Online Vector Similarity Search and Relational Queries via Relaxed Monotonicity},
+  booktitle = {17th USENIX Symposium on Operating Systems Design and Implementation (OSDI 23)},
+  pages     = {377--395},
+  year      = {2023}
+}
+
+@inproceedings{zhang2024limitations,
+  author    = {Zhang, Yunan and Liu, Shige and Wang, Jianguo},
+  title     = {Are There Fundamental Limitations in Supporting Vector Data Management in Relational Databases? {A} Case Study of {PostgreSQL}},
+  booktitle = {2024 IEEE 40th International Conference on Data Engineering (ICDE)},
+  pages     = {3640--3653},
+  year      = {2024},
+  doi       = {10.1109/ICDE60146.2024.00280}
+}
+
+@article{pan2024survey,
+  author  = {Pan, James Jie and Wang, Jianguo and Li, Guoliang},
+  title   = {Survey of Vector Database Management Systems},
+  journal = {The VLDB Journal},
+  volume  = {33},
+  number  = {5},
+  pages   = {1591--1615},
+  year    = {2024},
+  doi     = {10.1007/s00778-024-00864-x}
+}
+
+% ---------- 4. Access path secimi ve filtreli arama olcum calismalari ----------
+
+@inproceedings{selinger1979access,
+  author    = {Selinger, P. Griffiths and Astrahan, M. M. and Chamberlin, D. D. and Lorie, R. A. and Price, T. G.},
+  title     = {Access Path Selection in a Relational Database Management System},
+  booktitle = {Proceedings of the 1979 ACM SIGMOD International Conference on Management of Data},
+  pages     = {23--34},
+  year      = {1979},
+  doi       = {10.1145/582095.582099}
+}
+
+@inproceedings{sanca2024accesspaths,
+  author    = {Sanca, Viktor and Ailamaki, Anastasia},
+  title     = {Efficient Data Access Paths for Mixed Vector-Relational Search},
+  booktitle = {Proceedings of the 20th International Workshop on Data Management on New Hardware},
+  pages     = {1--9},
+  year      = {2024},
+  doi       = {10.1145/3662010.3663448}
+}
+
+@article{lu2026filteragnostic,
+  author  = {Lu, Duo and Caminal, Helena and Chatzakis, Manos and Papakonstantinou, Yannis and Chronis, Yannis and Jain, Vaibhav and {\"O}zcan, Fatma},
+  title   = {An In-Depth Study of Filter-Agnostic Vector Search on a {PostgreSQL} Database System: [Experiments \& Analysis]},
+  journal = {Proceedings of the ACM on Management of Data},
+  volume  = {4},
+  number  = {3},
+  pages   = {1--26},
+  year    = {2026},
+  doi     = {10.1145/3802011}
+}
+
+% arXiv on-baski; hakemli bir yerde yayinlanip yayinlanmadigini gondermeden once kontrol edin.
+@misc{amanbayev2026filtered,
+  author        = {Amanbayev, Abylay and Tsan, Brian and Dang, Tri and Rusu, Florin},
+  title         = {Filtered Approximate Nearest Neighbor Search in Vector Databases: System Design and Performance Analysis},
+  year          = {2026},
+  eprint        = {2602.11443},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.DB}
+}
+
+% arXiv on-baski; hakemli bir yerde yayinlanip yayinlanmadigini gondermeden once kontrol edin.
+@misc{lim2026hardness,
+  author        = {Lim, Mintaek and Kim, Dogeun and Kim, Minwoo and Do, Jaeyoung},
+  title         = {Revisiting Filtered {ANN} Benchmarks: A Hardness-Controlled Benchmark Generator for Realistic Evaluation},
+  year          = {2026},
+  eprint        = {2606.14193},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.DB}
 }

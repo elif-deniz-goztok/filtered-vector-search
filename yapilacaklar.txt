@@ -8,7 +8,7 @@ WEEK 1 - Kurulum ve planlama
 [ ] Ortam: Linux, 16-32 GB RAM, SSD, embedding modeli için GPU (veya bölüm GPU sunucusu; vLLM/Ollama)
 [x] PostgreSQL + pgvector ve DuckDB + VSS kur, versiyonları not et
 [x] Rapor şablonu: ACM sigconf (DaMoN/SIGMOD) - ilk günden bu formatta yaz
-[ ] Literatür taramasına başla (en az 10 makale; HNSW, Filtered-DiskANN, ACORN, Milvus + diğerleri). Başlangıç referanslarının hepsi doğrulanmalı
+[x] Literatür taramasına başla (en az 10 makale; HNSW, Filtered-DiskANN, ACORN, Milvus + diğerleri). Başlangıç referanslarının hepsi doğrulanmalı
 
 WEEK 2 - Veri seti
 [ ] 1M embedding'li veri seti oluştur (ör. ürün verisi veya arXiv abstract'ları, açık bir embedding modeliyle)
