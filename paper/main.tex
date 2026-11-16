@@ -1,0 +1,83 @@
+% CMP461 DBMS Project (P8) -- ACM sigconf format
+% Derleme: latexmk -pdf main.tex   (veya Overleaf'e paper/ klasorunu yukleyin)
+% "nonacm": ders raporu icin telif/konferans bloklarini gizler.
+% Bir venue'ye gonderirken bu secenegi kaldirip venue'nun istedigi
+% \acmConference, \copyrightyear vb. komutlari ekleyin.
+\documentclass[sigconf,nonacm]{acmart}
+
+\usepackage{booktabs}
+\usepackage{graphicx}
+
+\begin{document}
+
+\title{Filtered Vector Search Inside Relational Engines: Where Hybrid Queries Break}
+\subtitle{CMP461 Progress Report}
+
+% TODO: ekip uyelerinin adlarini ve e-postalarini yazin
+\author{Elif Deniz G\"{o}ztok}
+\affiliation{%
+  \institution{Hacettepe University}
+  \city{Ankara}
+  \country{T\"{u}rkiye}}
+\email{TODO@hacettepe.edu.tr}
+
+\author{TODO Teammate}
+\affiliation{%
+  \institution{Hacettepe University}
+  \city{Ankara}
+  \country{T\"{u}rkiye}}
+\email{TODO@hacettepe.edu.tr}
+
+\begin{abstract}
+TODO: 4--6 sentences. Problem, what we measure, main finding, contribution.
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}
+% TODO: Motivasyon (hybrid query ornegi), problem (post-filter az sonuc
+% dondurur, pre-filter index'i kaybeder).
+% ZORUNLU: tek cumlelik arastirma sorusu + beklenen katki.
+
+\textbf{Research question.} TODO: one sentence.
+
+\textbf{Expected contribution.} TODO.
+
+\section{Related Work}
+% TODO: >= 10 makale. Gruplar: (1) ANN indexleri, (2) filtered ANN,
+% (3) vektor veritabanlari / DBMS ici vektor arama, (4) access path selection.
+% ZORUNLU: bolum acik bir "gap" cumlesiyle bitmeli.
+Graph-based indexes such as HNSW~\cite{malkov2020hnsw} \ldots
+
+\section{System Setup}
+% TODO: results/env_versions.txt icindeki versiyonlar, donanim
+% (Ryzen 7 5800H, 16 GB RAM, RTX 3060 6 GB, NVMe SSD; WSL2 10 GB),
+% veri seti (1M kayit, 384 boyut, gerekcesi), workload generator, repo linki.
+
+\begin{table}[h]
+  \caption{Software and hardware configuration.}
+  \label{tab:setup}
+  \begin{tabular}{ll}
+    \toprule
+    Component & Version / value \\
+    \midrule
+    PostgreSQL & 17.6 \\
+    pgvector & 0.8.0 \\
+    DuckDB & 2.0.0 \\
+    DuckDB VSS & TODO \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Baseline Results}
+% TODO: (1) yayinlanmis bir sonucun reproduce edilmesi (~%10 icinde ya da
+% sapmanin aciklamasi), (2) kendi fikrimizin ilk olcumleri.
+% Metrikler: Recall@10, p50/p99 latency, donen sonuc sayisi vs. k.
+
+\section{Plan for Weeks 5--8}
+% TODO: somut deneyler, riskler, ISIMLI fallback.
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{refs}
+
+\end{document}

@@ -13,10 +13,15 @@ data/
 
 # LaTeX ciktilari
 *.aux
-*.log
+paper/*.log
 *.out
 *.synctex.gz
 
 .env
 .vscode/
 .idea/
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.toc
