@@ -6,7 +6,7 @@ WEEK 1 - Kurulum ve planlama
 [ ] Hedef venue deadline'larını kontrol et (SIGMOD SRC, DaMoN @ SIGMOD, VLDB co-located workshoplar, ADBIS)
 [ ] Public Git repo aç; tüm kurulum/deney adımları script'li olacak
 [ ] Ortam: Linux, 16-32 GB RAM, SSD, embedding modeli için GPU (veya bölüm GPU sunucusu; vLLM/Ollama)
-[ ] PostgreSQL + pgvector ve DuckDB + VSS kur, versiyonları not et
+[x] PostgreSQL + pgvector ve DuckDB + VSS kur, versiyonları not et
 [ ] Rapor şablonu: ACM sigconf (DaMoN/SIGMOD) - ilk günden bu formatta yaz
 [ ] Literatür taramasına başla (en az 10 makale; HNSW, Filtered-DiskANN, ACORN, Milvus + diğerleri). Başlangıç referanslarının hepsi doğrulanmalı
 

@@ -12,14 +12,14 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
       - ./db/init:/docker-entrypoint-initdb.d:ro
-    # 1M vektor + HNSW build icin bellek ayarlari
+    # Bellek ayarlari: Windows tarafinda ~6 GB bos RAM var; index build zirvesi ~4.5 GB olacak sekilde ayarlandi
     command: >
       postgres
-      -c shared_buffers=2GB
-      -c maintenance_work_mem=4GB
+      -c shared_buffers=1GB
+      -c maintenance_work_mem=3GB
       -c work_mem=64MB
       -c max_parallel_maintenance_workers=4
-    shm_size: 4gb
+    shm_size: 3gb
 
 volumes:
   pgdata:

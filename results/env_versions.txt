@@ -1,0 +1,7 @@
+OS: Windows-10-10.0.26200-SP0
+Python: 3.11.0
+NumPy: 2.4.6
+PostgreSQL: 17.6 (Debian 17.6-1.pgdg12+1)
+pgvector: 0.8.0
+DuckDB: 2.0.0
+DuckDB vss: 3685131eac
